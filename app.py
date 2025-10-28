@@ -4,8 +4,9 @@ import google.generativeai as genai
 import nltk
 
 # Download sentence tokenizer if not already present
-nltk.download('punkt', quiet=True)
 
+nltk.download('punkt')
+nltk.download('punkt_tab')
 # --- Streamlit UI ---
 st.set_page_config(page_title="📘 Sentence-based PDF Q/A Chatbot")
 st.title("📘 Gemini PDF Q/A Chatbot using Sentence-based Chunking")
