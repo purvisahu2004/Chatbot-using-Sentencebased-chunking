@@ -48,7 +48,7 @@ if api_key:
                     best_chunk = chunk
 
             if best_chunk:
-                model = genai.GenerativeModel("gemini-1.5-flash")
+                model = genai.GenerativeModel("gemini-2.5-flash-lite")
                 prompt = f"Answer the question based only on this text:\n\n{best_chunk}\n\nQuestion: {question}"
                 response = model.generate_content(prompt)
 
