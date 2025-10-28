@@ -27,7 +27,7 @@ if api_key:
 
         # --- Sentence-based Chunking ---
         sentences = nltk.sent_tokenize(text)
-        chunk_size = 5  # number of sentences per chunk
+        chunk_size = 10  # number of sentences per chunk
         chunks = [
             " ".join(sentences[i:i+chunk_size])
             for i in range(0, len(sentences), chunk_size)
